@@ -1,0 +1,9 @@
+{
+  "schemaVersion":"1",
+  "environments":[
+    {"environmentId":"ENV-LOGICAL-CONTROL","kind":"logical","status":"available","capabilities":["python","powershell","policy-engine"],"sideEffects":"none"},
+    {"environmentId":"ENV-HW-LAB-A","kind":"hardware-lab","status":"unknown","capabilities":["serial","jlink","power-relay","logic-analyzer"],"requiredEvidence":["worker-heartbeat","resource-lease","device-identity"],"sideEffects":"device-state"},
+    {"environmentId":"ENV-NETWORK-RACK","kind":"network-lab","status":"unknown","capabilities":["mqtt","zigbee","ble","packet-capture"],"requiredEvidence":["network-topology","target-identity","capture-artifact"],"sideEffects":"network-and-device-state"}
+  ],
+  "rule":"missing required capability or evidence yields BLOCKED; no implicit simulation fallback"
+}
