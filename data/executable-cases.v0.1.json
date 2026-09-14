@@ -1,0 +1,8 @@
+{
+  "schemaVersion":"1",
+  "cases":[
+    {"caseId":"TC-STATIC-LAYERS-001","title":"架构层检查","featureId":"F-SYS-001","toolId":"homecore.check.layers","executionStatus":"planned","mode":"logical-simulation","evidenceRequirements":["tool stdout","exit code"],"verdict":"BLOCKED","reason":"尚未在控制服务 Worker 中执行"},
+    {"caseId":"TC-HCRP-CONTRACT-001","title":"HCRP 双端契约检查","featureId":"F-HCRP-002","toolId":"homecore.check.hcrp-contract","executionStatus":"planned","mode":"logical-simulation","evidenceRequirements":["contract output","source revision"],"verdict":"BLOCKED","reason":"尚未在控制服务 Worker 中执行"},
+    {"caseId":"TC-FW-ENV-001","title":"固件环境检查","featureId":"F-SYS-001","toolId":"homecore.check.firmware-environment","executionStatus":"planned","mode":"logical-simulation","evidenceRequirements":["environment output","module selection"],"verdict":"BLOCKED","reason":"尚未在控制服务 Worker 中执行"}
+  ]
+}
