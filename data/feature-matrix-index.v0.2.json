@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "1",
+  "matrixVersion": "V0.2",
+  "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md",
+  "categoryCount": 23,
+  "categories": [
+    {
+      "category": "SYS",
+      "title": "系统与配置",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "NET",
+      "title": "Wi-Fi与网络连接",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "BLE",
+      "title": "BLE设备接入",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "ZB",
+      "title": "Zigbee设备接入",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "SLE",
+      "title": "SLE设备接入",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "CELL",
+      "title": "CAT1接入",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "DEV",
+      "title": "统一设备与实体模型",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "PROF",
+      "title": "设备Profile与兼容",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "STATE",
+      "title": "状态、事件与告警",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "SVC",
+      "title": "统一服务与动作执行",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "RULE",
+      "title": "规则引擎",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "SEC",
+      "title": "访问控制与安全动作",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "MQTT",
+      "title": "MQTT与HA接口",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "WEB",
+      "title": "HTTP接口与管理页面",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "WS",
+      "title": "WebSocket接口",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "HCRP",
+      "title": "MCU与模组内部通信",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "STORE",
+      "title": "外部存储与持久化",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "OTA",
+      "title": "固件升级",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "DIAG",
+      "title": "诊断与可观测性",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "E2E",
+      "title": "跨功能业务与整机运行",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "HW",
+      "title": "电源与物理交互",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "APP",
+      "title": "家庭账号与APP业务",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    },
+    {
+      "category": "AUD",
+      "title": "音响与语音业务",
+      "implementationStatus": "unknown",
+      "automationStatus": "not-assessed",
+      "sourceRef": "docs\\HC 自动化测试_用例矩阵V0.2.md"
+    }
+  ]
+}
