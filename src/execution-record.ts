@@ -19,7 +19,10 @@ export function recordExecution(store: TestStore, root: string, runId: string, c
   const stderr = writeArtifact(root, `${caseId}-stderr`, result.stderr);
   store.saveArtifact(runId, stdout);
   store.saveArtifact(runId, stderr);
-  const attempt: CaseAttempt = { id: `${runId}-${caseId}-1`, caseId, attempt: 1, executionStatus: "completed", verdict: result.executionStatus === "completed" && result.exitCode === 0 ? "PASS" : result.executionStatus === "timeout" ? "BLOCKED" : "FAIL", failureKind: result.executionStatus === "timeout" ? "environment-unavailable" : result.executionStatus === "tool-error" ? "tool-error" : undefined, actualMode: "logical-simulation", assertions: [], artifactIds: [stdout.id, stderr.id], cleanupStatus: "completed", reason: result.executionStatus === "completed" ? undefined : result.executionStatus };
+  const attempt: CaseAttempt = { id: `${runId}-${caseId}-1`, caseId, attempt: 1, executionStatus: "completed", verdict: result.executionStatus === "completed" && result.exitCode === 0 ? "PASS" : result.executionStatus === "timeout" ? "BLOCKED" : "FAIL", actualMode: "logical-simulation", assertions: [], artifactIds: [stdout.id, stderr.id], cleanupStatus: "completed" };
+  if (result.executionStatus === "timeout") attempt.failureKind = "environment-unavailable";
+  if (result.executionStatus === "tool-error") attempt.failureKind = "tool-error";
+  if (result.executionStatus !== "completed") attempt.reason = result.executionStatus;
   store.saveAttempt(runId, attempt);
   return attempt;
 }
