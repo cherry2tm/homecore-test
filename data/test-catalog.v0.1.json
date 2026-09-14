@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1",
+  "catalogVersion": "hc-test-assets-v0.1",
+  "sourceMatrix": "docs/HC 自动化测试_用例矩阵V0.2.md",
+  "features": [
+    {"id":"F-SYS-001","title":"系统启动与就绪","category":"SYS","implementationStatus":"unknown","applicability":["homecore_stm32f767"],"sourceRefs":["F:\\repository\\homecore\\project\\app\\homecore_stm32f767"],"interfaceIds":["IF-SYS-READY"],"testCaseIds":["TC-SYS-001-001"]},
+    {"id":"F-HCRP-002","title":"HCRP帧与解析","category":"HCRP","implementationStatus":"unknown","applicability":["homecore_stm32f767","esp-ble-only","esp-wifi","esp-zigbee"],"sourceRefs":["F:\\repository\\homecore\\project\\app\\homecore_stm32f767","F:\\repository\\homecore\\firmware\\esp-ble-only","F:\\repository\\homecore\\firmware\\esp-wifi","F:\\repository\\homecore\\firmware\\esp-zigbee"],"interfaceIds":["IF-HCRP-FRAME"],"testCaseIds":["TC-HCRP-002-001"]}
+  ],
+  "interfaces": [
+    {"id":"IF-SYS-READY","featureIds":["F-SYS-001"],"kind":"firmware","endpoint":"to-be-confirmed","syncSemantics":"event","sourceRefs":[],"testCaseIds":["TC-SYS-001-001"]},
+    {"id":"IF-HCRP-FRAME","featureIds":["F-HCRP-002"],"kind":"hcrp","endpoint":"to-be-confirmed","syncSemantics":"sync","sourceRefs":[],"testCaseIds":["TC-HCRP-002-001"]}
+  ],
+  "testCases": [
+    {"id":"TC-SYS-001-001","title":"启动后进入就绪状态","primaryFeatureId":"F-SYS-001","interfaceIds":["IF-SYS-READY"],"registrationStatus":"designed","supportedModes":["hardware"],"preconditions":["registered-firmware"],"steps":["boot-device","observe-ready"],"assertions":["ready-event-observed"],"cleanup":["capture-final-state"],"timeoutSeconds":120,"evidenceRequirements":["boot-log","ready-event"]},
+    {"id":"TC-HCRP-002-001","title":"HCRP帧解析与异常恢复","primaryFeatureId":"F-HCRP-002","interfaceIds":["IF-HCRP-FRAME"],"registrationStatus":"designed","supportedModes":["hardware","hardware-with-simulated-input","logical-simulation"],"preconditions":["protocol-definition-confirmed"],"steps":["send-valid-frame","inject-boundary-frame","observe-recovery"],"assertions":["valid-frame-decoded","invalid-frame-rejected","stream-recovers"],"cleanup":["reset-link"],"timeoutSeconds":60,"evidenceRequirements":["frame-capture","parser-result"]}
+  ],
+  "tools": []
+}
