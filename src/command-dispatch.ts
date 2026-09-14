@@ -5,6 +5,7 @@ export interface CommandDefinition {
   executable: string;
   runtime: "python" | "powershell" | "native";
   workingDirectory: string;
+  fixedArgs?: string[];
   args: Record<string, "string" | "number" | "boolean">;
   allowedValues?: Record<string, string[]>;
 }
@@ -28,6 +29,6 @@ export function prepareCommand(registry: ReadonlyArray<CommandDefinition>, comma
   }
   const missing = Object.keys(definition.args).filter((key) => !(key in values));
   if (missing.length > 0) throw new Error(`缺少参数：${missing.join(", ")}`);
-  const argv = Object.entries(values).flatMap(([key, value]) => [`--${key}`, String(value)]);
+  const argv = [...(definition.fixedArgs ?? []), ...Object.entries(values).flatMap(([key, value]) => [`--${key}`, String(value)])];
   return { commandId, executable: definition.executable, cwd: definition.workingDirectory, argv };
 }
