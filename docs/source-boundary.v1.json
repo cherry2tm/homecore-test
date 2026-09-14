@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1",
+  "repository": "F:\\repository\\homecore",
+  "authoritativeSources": [
+    {
+      "id": "mcu-stm32f767",
+      "subsystem": "HC MCU core",
+      "path": "project/app/homecore_stm32f767",
+      "vcs": "mercurial",
+      "status": "current"
+    },
+    {
+      "id": "c6-ble",
+      "subsystem": "C6 BLE",
+      "path": "firmware/esp-ble-only",
+      "vcs": "mercurial",
+      "status": "current"
+    },
+    {
+      "id": "c6-wifi",
+      "subsystem": "C6 Wi-Fi",
+      "path": "firmware/esp-wifi",
+      "vcs": "mercurial",
+      "status": "current"
+    },
+    {
+      "id": "c6-zigbee",
+      "subsystem": "C6 Zigbee",
+      "path": "firmware/esp-zigbee",
+      "vcs": "mercurial",
+      "status": "current"
+    }
+  ],
+  "retiredSources": [
+    {
+      "id": "esp-at-ble",
+      "path": "firmware/esp-at-ble",
+      "status": "retired",
+      "rule": "历史目录，不得作为当前实现、接口覆盖、执行器来源或测试通过依据"
+    }
+  ],
+  "crossSubsystemRule": "跨目录依赖必须登记到接口或用例关联，不得仅按芯片型号推断归属"
+}
