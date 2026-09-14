@@ -181,3 +181,82 @@ export interface RunRecord {
   evidenceCount: number;
   planHash: string;
 }
+
+export type ImplementationStatus = "verified" | "partial" | "planned" | "unsupported" | "unknown";
+export type RegistrationStatus = "designed" | "registered" | "ready" | "retired";
+export type ExecutionMode = "hardware" | "hardware-with-simulated-input" | "logical-simulation";
+export type Verdict = "PASS" | "FAIL" | "BLOCKED" | "SKIPPED" | "CANCELED";
+export type FailureKind = "assertion" | "tool-error" | "environment-unavailable" | "unparseable-result" | "canceled";
+
+export interface Feature {
+  id: string;
+  title: string;
+  category: string;
+  implementationStatus: ImplementationStatus;
+  applicability: string[];
+  sourceRefs: string[];
+  interfaceIds: string[];
+  testCaseIds: string[];
+}
+
+export interface TestInterface {
+  id: string;
+  featureIds: string[];
+  kind: "http" | "websocket" | "mqtt" | "hcrp" | "at" | "firmware" | "tool" | "physical";
+  endpoint: string;
+  schemaRef?: string;
+  permission?: string;
+  syncSemantics: "sync" | "async" | "event" | "physical-observation";
+  sourceRefs: string[];
+  testCaseIds: string[];
+}
+
+export interface TestCase {
+  id: string;
+  title: string;
+  primaryFeatureId: string;
+  interfaceIds: string[];
+  registrationStatus: RegistrationStatus;
+  supportedModes: ExecutionMode[];
+  preconditions: string[];
+  steps: string[];
+  assertions: string[];
+  cleanup: string[];
+  timeoutSeconds: number;
+  evidenceRequirements: string[];
+}
+
+export interface ToolRegistration {
+  toolId: string;
+  sourceRef: string;
+  runtime: "python" | "powershell" | "batch" | "native" | "data" | "unknown";
+  category: string;
+  lifecycle: "active" | "candidate" | "retired";
+  argumentSchemaStatus: "registered" | "unreviewed";
+  resultParserStatus: "registered" | "unregistered";
+  requiredCapabilities: string[];
+  sideEffects: "read-only" | "build" | "device-state" | "unknown-until-reviewed" | "requires-review";
+}
+
+export interface Artifact {
+  id: string;
+  relativePath: string;
+  mediaType: string;
+  sha256?: string;
+  sizeBytes?: number;
+  source: string;
+}
+
+export interface CaseAttempt {
+  id: string;
+  caseId: string;
+  attempt: number;
+  executionStatus: "queued" | "running" | "completed";
+  verdict: Verdict;
+  failureKind?: FailureKind;
+  actualMode: ExecutionMode;
+  assertions: Array<{ id: string; status: Verdict | "NOT_RUN"; expected: string; actual?: string; evidenceIds: string[] }>;
+  artifactIds: string[];
+  cleanupStatus: "pending" | "completed" | "failed";
+  reason?: string;
+}
