@@ -1,0 +1,3132 @@
+{
+  "schemaVersion": "1",
+  "generatedAt": "2026-09-14T16:40:25.8355212Z",
+  "sourceRoot": "F:\\repository\\homecore",
+  "excluded": [
+    "*.orig is historical source and not executable"
+  ],
+  "tools": [
+    {
+      "toolId": "homecore.tools.backup-stm32-kv",
+      "sourceRef": "homecore/tools/backup_stm32_kv.ps1",
+      "runtime": "powershell",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.build-all-firmware-release",
+      "sourceRef": "homecore/tools/build_all_firmware_release.ps1",
+      "runtime": "powershell",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.build-all-firmware-release.ps1",
+      "sourceRef": "homecore/tools/build_all_firmware_release.ps1.orig",
+      "runtime": "legacy-source",
+      "category": "build-release",
+      "lifecycle": "retired",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.build-hist-validation",
+      "sourceRef": "homecore/tools/build_hist_validation.ps1",
+      "runtime": "powershell",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.build-homecore-libs",
+      "sourceRef": "homecore/tools/build_homecore_libs.ps1",
+      "runtime": "powershell",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.build-sle-release",
+      "sourceRef": "homecore/tools/build_sle_release.ps1",
+      "runtime": "powershell",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.build-wireless-release",
+      "sourceRef": "homecore/tools/build_wireless_release.ps1",
+      "runtime": "powershell",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.build-wireless-release.ps1",
+      "sourceRef": "homecore/tools/build_wireless_release.ps1.orig",
+      "runtime": "legacy-source",
+      "category": "build-release",
+      "lifecycle": "retired",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-common-profile-contract",
+      "sourceRef": "homecore/tools/check_common_profile_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-esp-zigbee-coordinator",
+      "sourceRef": "homecore/tools/check_esp_zigbee_coordinator.ps1",
+      "runtime": "powershell",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-esp-zigbee-device-interview",
+      "sourceRef": "homecore/tools/check_esp_zigbee_device_interview.ps1",
+      "runtime": "powershell",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-esp-zigbee-network",
+      "sourceRef": "homecore/tools/check_esp_zigbee_network.ps1",
+      "runtime": "powershell",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-firmware-environment",
+      "sourceRef": "homecore/tools/check_firmware_environment.ps1",
+      "runtime": "powershell",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-firmware-environment.ps1",
+      "sourceRef": "homecore/tools/check_firmware_environment.ps1.orig",
+      "runtime": "legacy-source",
+      "category": "verification",
+      "lifecycle": "retired",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-hcrp-contract",
+      "sourceRef": "homecore/tools/check_hcrp_contract.ps1",
+      "runtime": "powershell",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-homecore-layers",
+      "sourceRef": "homecore/tools/check_homecore_layers.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-mcu-ota-baseline",
+      "sourceRef": "homecore/tools/check_mcu_ota_baseline.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-rule-engine-contract",
+      "sourceRef": "homecore/tools/check_rule_engine_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-rule-engine-contract.py",
+      "sourceRef": "homecore/tools/check_rule_engine_contract.py.orig",
+      "runtime": "legacy-source",
+      "category": "verification",
+      "lifecycle": "retired",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-rule-execution-delivery",
+      "sourceRef": "homecore/tools/check_rule_execution_delivery.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-rule-execution-error-contract",
+      "sourceRef": "homecore/tools/check_rule_execution_error_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-rule-execution-error-mapping",
+      "sourceRef": "homecore/tools/check_rule_execution_error_mapping.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-rule-execution-hcrp-wire",
+      "sourceRef": "homecore/tools/check_rule_execution_hcrp_wire.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-rule-execution-negative-matrix",
+      "sourceRef": "homecore/tools/check_rule_execution_negative_matrix.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-sle-at-contract",
+      "sourceRef": "homecore/tools/check_sle_at_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-sle-field-evidence",
+      "sourceRef": "homecore/tools/check_sle_field_evidence.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-sle-field-preflight",
+      "sourceRef": "homecore/tools/check_sle_field_preflight.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-sle-integration-contract",
+      "sourceRef": "homecore/tools/check_sle_integration_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-sle-management-contract",
+      "sourceRef": "homecore/tools/check_sle_management_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-sle-onboarding-contract",
+      "sourceRef": "homecore/tools/check_sle_onboarding_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-sle-rest-web-contract",
+      "sourceRef": "homecore/tools/check_sle_rest_web_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-sle-ssap-contract",
+      "sourceRef": "homecore/tools/check_sle_ssap_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-zigbee-descriptor-stream",
+      "sourceRef": "homecore/tools/check_zigbee_descriptor_stream.ps1",
+      "runtime": "powershell",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-zigbee-hcrp-runtime",
+      "sourceRef": "homecore/tools/check_zigbee_hcrp_runtime.ps1",
+      "runtime": "powershell",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-zigbee-product-registry",
+      "sourceRef": "homecore/tools/check_zigbee_product_registry.ps1",
+      "runtime": "powershell",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-zigbee-standard-mapper",
+      "sourceRef": "homecore/tools/check_zigbee_standard_mapper.ps1",
+      "runtime": "powershell",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.check-zigbee-zcl-data-plane",
+      "sourceRef": "homecore/tools/check_zigbee_zcl_data_plane.ps1",
+      "runtime": "powershell",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.continue-sle-upload",
+      "sourceRef": "homecore/tools/continue_sle_upload.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.continuous-memory-check",
+      "sourceRef": "homecore/tools/continuous_memory_check.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.export-mcu-app-bin",
+      "sourceRef": "homecore/tools/export_mcu_app_bin.ps1",
+      "runtime": "powershell",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.firmware-build-fingerprint",
+      "sourceRef": "homecore/tools/firmware_build_fingerprint.ps1",
+      "runtime": "powershell",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.firmware-module-identity",
+      "sourceRef": "homecore/tools/firmware_module_identity.ps1",
+      "runtime": "powershell",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.generate-ble-breaker-profiles",
+      "sourceRef": "homecore/tools/generate_ble_breaker_profiles.ps1",
+      "runtime": "powershell",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.generate-hc-errors",
+      "sourceRef": "homecore/tools/generate_hc_errors.py",
+      "runtime": "python",
+      "category": "diagnostics",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.generate-hg-version",
+      "sourceRef": "homecore/tools/generate_hg_version.ps1",
+      "runtime": "powershell",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.hardware-mqtt-acceptance",
+      "sourceRef": "homecore/tools/hardware_mqtt_acceptance.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.hc-c235-service-control-cases.example",
+      "sourceRef": "homecore/tools/hc_c235_service_control_cases.example.json",
+      "runtime": "data",
+      "category": "utility",
+      "lifecycle": "candidate",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.hc-c235-service-control-evidence",
+      "sourceRef": "homecore/tools/hc_c235_service_control_evidence.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.hc-error-decode",
+      "sourceRef": "homecore/tools/hc_error_decode.py",
+      "runtime": "python",
+      "category": "diagnostics",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.homecore-action-auth",
+      "sourceRef": "homecore/tools/homecore_action_auth.py",
+      "runtime": "python",
+      "category": "diagnostics",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.inspect-ops-live",
+      "sourceRef": "homecore/tools/inspect_ops_live.py",
+      "runtime": "python",
+      "category": "diagnostics",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.inspect-stm32-kv-dump",
+      "sourceRef": "homecore/tools/inspect_stm32_kv_dump.py",
+      "runtime": "python",
+      "category": "diagnostics",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.invoke-wireless-firmware",
+      "sourceRef": "homecore/tools/invoke_wireless_firmware.ps1",
+      "runtime": "powershell",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.invoke-wireless-firmware.ps1",
+      "sourceRef": "homecore/tools/invoke_wireless_firmware.ps1.orig",
+      "runtime": "legacy-source",
+      "category": "firmware-ota",
+      "lifecycle": "retired",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.load-firmware-environment",
+      "sourceRef": "homecore/tools/load_firmware_environment.ps1",
+      "runtime": "powershell",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.load-firmware-environment.ps1",
+      "sourceRef": "homecore/tools/load_firmware_environment.ps1.orig",
+      "runtime": "legacy-source",
+      "category": "firmware-ota",
+      "lifecycle": "retired",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.mcu-ota-broker-simulator-ui",
+      "sourceRef": "homecore/tools/mcu_ota_broker_simulator_ui.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "candidate",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.mcu-ota-broker-simulator",
+      "sourceRef": "homecore/tools/mcu_ota_broker_simulator.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "candidate",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.monitor-serial",
+      "sourceRef": "homecore/tools/monitor_serial.py",
+      "runtime": "python",
+      "category": "hardware",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.monitor-sle-hg60",
+      "sourceRef": "homecore/tools/monitor_sle_hg60.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.package-all-firmware-release",
+      "sourceRef": "homecore/tools/package_all_firmware_release.ps1",
+      "runtime": "powershell",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.package-all-firmware-release.ps1",
+      "sourceRef": "homecore/tools/package_all_firmware_release.ps1.orig",
+      "runtime": "legacy-source",
+      "category": "build-release",
+      "lifecycle": "retired",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.package-ble-ota",
+      "sourceRef": "homecore/tools/package_ble_ota.ps1",
+      "runtime": "powershell",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.package-hcfw",
+      "sourceRef": "homecore/tools/package_hcfw.py",
+      "runtime": "python",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.package-mcu-app",
+      "sourceRef": "homecore/tools/package_mcu_app.py",
+      "runtime": "python",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.package-mcu-release",
+      "sourceRef": "homecore/tools/package_mcu_release.ps1",
+      "runtime": "powershell",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.package-mcu-release.ps1",
+      "sourceRef": "homecore/tools/package_mcu_release.ps1.orig",
+      "runtime": "legacy-source",
+      "category": "build-release",
+      "lifecycle": "retired",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.package-wifi-ota",
+      "sourceRef": "homecore/tools/package_wifi_ota.bat",
+      "runtime": "batch",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.package-wifi-ota",
+      "sourceRef": "homecore/tools/package_wifi_ota.ps1",
+      "runtime": "powershell",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.package-wireless-flash",
+      "sourceRef": "homecore/tools/package_wireless_flash.ps1",
+      "runtime": "powershell",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.package-wireless-flash.ps1",
+      "sourceRef": "homecore/tools/package_wireless_flash.ps1.orig",
+      "runtime": "legacy-source",
+      "category": "build-release",
+      "lifecycle": "retired",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.package-zigbee-ota",
+      "sourceRef": "homecore/tools/package_zigbee_ota.bat",
+      "runtime": "batch",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.package-zigbee-ota",
+      "sourceRef": "homecore/tools/package_zigbee_ota.ps1",
+      "runtime": "powershell",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.patch-sle-resume-bytes",
+      "sourceRef": "homecore/tools/patch_sle_resume_bytes.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.patch-sle-resume",
+      "sourceRef": "homecore/tools/patch_sle_resume.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.platform-config-acceptance",
+      "sourceRef": "homecore/tools/platform_config_acceptance.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.platform-journal-acceptance",
+      "sourceRef": "homecore/tools/platform_journal_acceptance.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.platform-mqtt-responder",
+      "sourceRef": "homecore/tools/platform_mqtt_responder.py",
+      "runtime": "python",
+      "category": "platform-network",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.platform-node-wireless-acceptance",
+      "sourceRef": "homecore/tools/platform_node_wireless_acceptance.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.platform-ota-broker-simulator",
+      "sourceRef": "homecore/tools/platform_ota_broker_simulator.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "candidate",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.platform-pagination-acceptance",
+      "sourceRef": "homecore/tools/platform_pagination_acceptance.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.platform-registration-probe",
+      "sourceRef": "homecore/tools/platform_registration_probe.py",
+      "runtime": "python",
+      "category": "platform-network",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.platform-rule-v21-acceptance",
+      "sourceRef": "homecore/tools/platform_rule_v21_acceptance.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.platform-state-get-acceptance",
+      "sourceRef": "homecore/tools/platform_state_get_acceptance.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.platform-virtual-device-acceptance",
+      "sourceRef": "homecore/tools/platform_virtual_device_acceptance.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.platform-virtual-device-acceptance.py",
+      "sourceRef": "homecore/tools/platform_virtual_device_acceptance.py.orig",
+      "runtime": "legacy-source",
+      "category": "verification",
+      "lifecycle": "retired",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.read-firmware-identity",
+      "sourceRef": "homecore/tools/read_firmware_identity.py",
+      "runtime": "python",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.retry-sle-with-mcu-log",
+      "sourceRef": "homecore/tools/retry_sle_with_mcu_log.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-extfs-hardware-tests",
+      "sourceRef": "homecore/tools/run_extfs_hardware_tests.ps1",
+      "runtime": "powershell",
+      "category": "hardware",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-homecore-host-sim",
+      "sourceRef": "homecore/tools/run_homecore_host_sim.ps1",
+      "runtime": "powershell",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg44-diag",
+      "sourceRef": "homecore/tools/run_sle_hg44_diag.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg44-retry",
+      "sourceRef": "homecore/tools/run_sle_hg44_retry.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg44-retry2",
+      "sourceRef": "homecore/tools/run_sle_hg44_retry2.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg44-retry3",
+      "sourceRef": "homecore/tools/run_sle_hg44_retry3.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg45-clean",
+      "sourceRef": "homecore/tools/run_sle_hg45_clean.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg46-clean",
+      "sourceRef": "homecore/tools/run_sle_hg46_clean.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg47-clean",
+      "sourceRef": "homecore/tools/run_sle_hg47_clean.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg48-clean",
+      "sourceRef": "homecore/tools/run_sle_hg48_clean.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg53-current",
+      "sourceRef": "homecore/tools/run_sle_hg53_current.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg56",
+      "sourceRef": "homecore/tools/run_sle_hg56.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg59",
+      "sourceRef": "homecore/tools/run_sle_hg59.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg60-nomonitor",
+      "sourceRef": "homecore/tools/run_sle_hg60_nomonitor.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg60",
+      "sourceRef": "homecore/tools/run_sle_hg60.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg61-both",
+      "sourceRef": "homecore/tools/run_sle_hg61_both.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg61-final",
+      "sourceRef": "homecore/tools/run_sle_hg61_final.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg61-live-current",
+      "sourceRef": "homecore/tools/run_sle_hg61_live_current.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg61-live",
+      "sourceRef": "homecore/tools/run_sle_hg61_live.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg61-nomonitor",
+      "sourceRef": "homecore/tools/run_sle_hg61_nomonitor.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg62-nomonitor",
+      "sourceRef": "homecore/tools/run_sle_hg62_nomonitor.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.run-sle-hg62-retry",
+      "sourceRef": "homecore/tools/run_sle_hg62_retry.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.sle-fota",
+      "sourceRef": "homecore/tools/sle_fota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.test-mcu-ota-broker-simulator",
+      "sourceRef": "homecore/tools/test_mcu_ota_broker_simulator.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "candidate",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.test-sle-field-preflight",
+      "sourceRef": "homecore/tools/test_sle_field_preflight.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.tmp-upload-hcfw",
+      "sourceRef": "homecore/tools/tmp_upload_hcfw.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-action-auth-wire",
+      "sourceRef": "homecore/tools/verify_action_auth_wire.py",
+      "runtime": "python",
+      "category": "diagnostics",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-alarm-lifecycle-contract",
+      "sourceRef": "homecore/tools/verify_alarm_lifecycle_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-alarm-lifecycle-contract.py",
+      "sourceRef": "homecore/tools/verify_alarm_lifecycle_contract.py.orig",
+      "runtime": "legacy-source",
+      "category": "verification",
+      "lifecycle": "retired",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-firmware-version",
+      "sourceRef": "homecore/tools/verify_firmware_version.ps1",
+      "runtime": "powershell",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-fs-browser-generation",
+      "sourceRef": "homecore/tools/verify_fs_browser_generation.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-fs-browser-snapshot",
+      "sourceRef": "homecore/tools/verify_fs_browser_snapshot.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-fs-browser-ui",
+      "sourceRef": "homecore/tools/verify_fs_browser_ui.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-ble-error-migration",
+      "sourceRef": "homecore/tools/verify_hc_ble_error_migration.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-ble-ota-dev-gate",
+      "sourceRef": "homecore/tools/verify_hc_ble_ota_dev_gate.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-board-bsp-migration",
+      "sourceRef": "homecore/tools/verify_hc_board_bsp_migration.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c214b-boot-extfs",
+      "sourceRef": "homecore/tools/verify_hc_c214b_boot_extfs.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c214c-patch",
+      "sourceRef": "homecore/tools/verify_hc_c214c_patch.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c215-storage",
+      "sourceRef": "homecore/tools/verify_hc_c215_storage.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c216-ota-wire",
+      "sourceRef": "homecore/tools/verify_hc_c216_ota_wire.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c217-apply-recovery",
+      "sourceRef": "homecore/tools/verify_hc_c217_apply_recovery.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c223a-ble-ota",
+      "sourceRef": "homecore/tools/verify_hc_c223a_ble_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c223b-ble-ota",
+      "sourceRef": "homecore/tools/verify_hc_c223b_ble_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c223c-ble-ota",
+      "sourceRef": "homecore/tools/verify_hc_c223c_ble_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c225a-zigbee-ota",
+      "sourceRef": "homecore/tools/verify_hc_c225a_zigbee_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c225b-zigbee-ota",
+      "sourceRef": "homecore/tools/verify_hc_c225b_zigbee_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c225c1-zigbee-ota",
+      "sourceRef": "homecore/tools/verify_hc_c225c1_zigbee_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c225c2-zigbee-ota",
+      "sourceRef": "homecore/tools/verify_hc_c225c2_zigbee_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c225c3-zigbee-ota",
+      "sourceRef": "homecore/tools/verify_hc_c225c3_zigbee_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c226-zigbee-ota",
+      "sourceRef": "homecore/tools/verify_hc_c226_zigbee_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c228a-sle-ota-contract",
+      "sourceRef": "homecore/tools/verify_hc_c228a_sle_ota_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c235-service-evidence",
+      "sourceRef": "homecore/tools/verify_hc_c235_service_evidence.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c242-module-control",
+      "sourceRef": "homecore/tools/verify_hc_c242_module_control.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c245-fs-ota-contract",
+      "sourceRef": "homecore/tools/verify_hc_c245_fs_ota_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c246-fs-provider",
+      "sourceRef": "homecore/tools/verify_hc_c246_fs_provider.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c247-ota-ingress",
+      "sourceRef": "homecore/tools/verify_hc_c247_ota_ingress.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c248-wifi-fs-ota",
+      "sourceRef": "homecore/tools/verify_hc_c248_wifi_fs_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c249-hc-mini-fs-ota",
+      "sourceRef": "homecore/tools/verify_hc_c249_hc_mini_fs_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c250-web-ota",
+      "sourceRef": "homecore/tools/verify_hc_c250_web_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c250-web-ota.py",
+      "sourceRef": "homecore/tools/verify_hc_c250_web_ota.py.orig",
+      "runtime": "legacy-source",
+      "category": "firmware-ota",
+      "lifecycle": "retired",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c251-wifi-ota",
+      "sourceRef": "homecore/tools/verify_hc_c251_wifi_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c252-ble-ota",
+      "sourceRef": "homecore/tools/verify_hc_c252_ble_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c253-zigbee-ota",
+      "sourceRef": "homecore/tools/verify_hc_c253_zigbee_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c254-sle-ota",
+      "sourceRef": "homecore/tools/verify_hc_c254_sle_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c255-fs-ota-freeze",
+      "sourceRef": "homecore/tools/verify_hc_c255_fs_ota_freeze.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-c256-ota-delete",
+      "sourceRef": "homecore/tools/verify_hc_c256_ota_delete.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-error-catalog",
+      "sourceRef": "homecore/tools/verify_hc_error_catalog.py",
+      "runtime": "python",
+      "category": "diagnostics",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-extfs-migration",
+      "sourceRef": "homecore/tools/verify_hc_extfs_migration.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-gd5f1gm7-migration",
+      "sourceRef": "homecore/tools/verify_hc_gd5f1gm7_migration.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-hcrp-frame-migration",
+      "sourceRef": "homecore/tools/verify_hc_hcrp_frame_migration.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-hcrp-object-stream-migration",
+      "sourceRef": "homecore/tools/verify_hc_hcrp_object_stream_migration.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-hcrp-zigbee-wire-migration",
+      "sourceRef": "homecore/tools/verify_hc_hcrp_zigbee_wire_migration.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-mcu-ota-coordinator-ble-error-mapping",
+      "sourceRef": "homecore/tools/verify_hc_mcu_ota_coordinator_ble_error_mapping.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-mcu-ota-coordinator-error-mapping",
+      "sourceRef": "homecore/tools/verify_hc_mcu_ota_coordinator_error_mapping.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-mcu-ota-coordinator-wifi-error-mapping",
+      "sourceRef": "homecore/tools/verify_hc_mcu_ota_coordinator_wifi_error_mapping.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-mcu-ota-coordinator-zigbee-error-mapping",
+      "sourceRef": "homecore/tools/verify_hc_mcu_ota_coordinator_zigbee_error_mapping.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-mcu-ota-error-mapping",
+      "sourceRef": "homecore/tools/verify_hc_mcu_ota_error_mapping.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-mcu-ota-ingress-error-mapping",
+      "sourceRef": "homecore/tools/verify_hc_mcu_ota_ingress_error_mapping.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-mcu-ota-service-error-mapping",
+      "sourceRef": "homecore/tools/verify_hc_mcu_ota_service_error_mapping.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-mcu-ota-storage-error-mapping",
+      "sourceRef": "homecore/tools/verify_hc_mcu_ota_storage_error_mapping.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-mqtt-ota-v2",
+      "sourceRef": "homecore/tools/verify_hc_mqtt_ota_v2.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-nand-media-migration",
+      "sourceRef": "homecore/tools/verify_hc_nand_media_migration.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-ota-recovery",
+      "sourceRef": "homecore/tools/verify_hc_ota_recovery.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-port-boot-migration",
+      "sourceRef": "homecore/tools/verify_hc_port_boot_migration.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-port-dev-migration",
+      "sourceRef": "homecore/tools/verify_hc_port_dev_migration.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-port-error-runtime",
+      "sourceRef": "homecore/tools/verify_hc_port_error_runtime.py",
+      "runtime": "python",
+      "category": "diagnostics",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-port-os-migration",
+      "sourceRef": "homecore/tools/verify_hc_port_os_migration.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-port-security-migration",
+      "sourceRef": "homecore/tools/verify_hc_port_security_migration.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-port-storage-migration",
+      "sourceRef": "homecore/tools/verify_hc_port_storage_migration.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-port-time-migration",
+      "sourceRef": "homecore/tools/verify_hc_port_time_migration.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-sle-ota-wire",
+      "sourceRef": "homecore/tools/verify_hc_sle_ota_wire.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-transport-migration",
+      "sourceRef": "homecore/tools/verify_hc_transport_migration.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-wifi-mcu-rpc-error-migration",
+      "sourceRef": "homecore/tools/verify_hc_wifi_mcu_rpc_error_migration.py",
+      "runtime": "python",
+      "category": "diagnostics",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-wifi-runtime-contract",
+      "sourceRef": "homecore/tools/verify_hc_wifi_runtime_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc-zigbee-hcrp-link-migration",
+      "sourceRef": "homecore/tools/verify_hc_zigbee_hcrp_link_migration.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hc32-capabilities",
+      "sourceRef": "homecore/tools/verify_hc32_capabilities.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hcrp-rpc-v2",
+      "sourceRef": "homecore/tools/verify_hcrp_rpc_v2.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hist-owner",
+      "sourceRef": "homecore/tools/verify_hist_owner.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-history-browser",
+      "sourceRef": "homecore/tools/verify_history_browser.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-hv10-io-mapping",
+      "sourceRef": "homecore/tools/verify_hv10_io_mapping.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-local-debug-policy-contract",
+      "sourceRef": "homecore/tools/verify_local_debug_policy_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-mcu-boot",
+      "sourceRef": "homecore/tools/verify_mcu_boot.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-model-page-revision",
+      "sourceRef": "homecore/tools/verify_model_page_revision.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-ota-power-hold",
+      "sourceRef": "homecore/tools/verify_ota_power_hold.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-parameter-banks",
+      "sourceRef": "homecore/tools/verify_parameter_banks.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-platform-journal",
+      "sourceRef": "homecore/tools/verify_platform_journal.py",
+      "runtime": "python",
+      "category": "platform-network",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-platform-wire",
+      "sourceRef": "homecore/tools/verify_platform_wire.py",
+      "runtime": "python",
+      "category": "platform-network",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-platform-wire.py",
+      "sourceRef": "homecore/tools/verify_platform_wire.py.orig",
+      "runtime": "legacy-source",
+      "category": "platform-network",
+      "lifecycle": "retired",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-rule-action-terminal",
+      "sourceRef": "homecore/tools/verify_rule_action_terminal.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-rule-management-wire",
+      "sourceRef": "homecore/tools/verify_rule_management_wire.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-rule-management-wire.py",
+      "sourceRef": "homecore/tools/verify_rule_management_wire.py.orig",
+      "runtime": "legacy-source",
+      "category": "utility",
+      "lifecycle": "retired",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-rule-trigger-codec",
+      "sourceRef": "homecore/tools/verify_rule_trigger_codec.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-rule-trigger-runtime",
+      "sourceRef": "homecore/tools/verify_rule_trigger_runtime.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-rule-trigger-web",
+      "sourceRef": "homecore/tools/verify_rule_trigger_web.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-rule-v13-compatibility",
+      "sourceRef": "homecore/tools/verify_rule_v13_compatibility.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-rule-v13-compatibility.py",
+      "sourceRef": "homecore/tools/verify_rule_v13_compatibility.py.orig",
+      "runtime": "legacy-source",
+      "category": "utility",
+      "lifecycle": "retired",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-rule-v21-contract",
+      "sourceRef": "homecore/tools/verify_rule_v21_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-rule-v21-contract.py",
+      "sourceRef": "homecore/tools/verify_rule_v21_contract.py.orig",
+      "runtime": "legacy-source",
+      "category": "verification",
+      "lifecycle": "retired",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-service-invoke-contract",
+      "sourceRef": "homecore/tools/verify_service_invoke_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-service-invoke-migration",
+      "sourceRef": "homecore/tools/verify_service_invoke_migration.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-service-list-schema",
+      "sourceRef": "homecore/tools/verify_service_list_schema.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-sle-hcfw",
+      "sourceRef": "homecore/tools/verify_sle_hcfw.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-sle-ota-adapter-identity",
+      "sourceRef": "homecore/tools/verify_sle_ota_adapter_identity.py",
+      "runtime": "python",
+      "category": "build-release",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-sle-radar-profiles",
+      "sourceRef": "homecore/tools/verify_sle_radar_profiles.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-stm32-kv-layout",
+      "sourceRef": "homecore/tools/verify_stm32_kv_layout.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-storage-maintenance",
+      "sourceRef": "homecore/tools/verify_storage_maintenance.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-virtual-device-contract",
+      "sourceRef": "homecore/tools/verify_virtual_device_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-wifi-ota-http-recovery",
+      "sourceRef": "homecore/tools/verify_wifi_ota_http_recovery.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-wifi-rpc-startup",
+      "sourceRef": "homecore/tools/verify_wifi_rpc_startup.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-zd24-query-recovery",
+      "sourceRef": "homecore/tools/verify_zd24_query_recovery.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-zd24-report-parser",
+      "sourceRef": "homecore/tools/verify_zd24_report_parser.py",
+      "runtime": "python",
+      "category": "utility",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-zigbee-mqtt-contract",
+      "sourceRef": "homecore/tools/verify_zigbee_mqtt_contract.py",
+      "runtime": "python",
+      "category": "verification",
+      "lifecycle": "active",
+      "sideEffects": "unknown-until-reviewed",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-zigbee-pending-reports",
+      "sourceRef": "homecore/tools/verify_zigbee_pending_reports.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.verify-zigbee-read-attributes",
+      "sourceRef": "homecore/tools/verify_zigbee_read_attributes.py",
+      "runtime": "python",
+      "category": "wireless-protocol",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    },
+    {
+      "toolId": "homecore.tools.wifi-http-ota",
+      "sourceRef": "homecore/tools/wifi_http_ota.py",
+      "runtime": "python",
+      "category": "firmware-ota",
+      "lifecycle": "active",
+      "sideEffects": "requires-review",
+      "supportedPlatforms": [
+        "windows"
+      ],
+      "requiredCapabilities": [],
+      "argumentSchemaStatus": "unreviewed",
+      "resultParserStatus": "unregistered"
+    }
+  ]
+}
