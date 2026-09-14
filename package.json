@@ -1,0 +1,25 @@
+{
+  "name": "homecore-test-agent-console",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "HomeCore test-agent control console prototype",
+  "packageManager": "npm@10.9.4",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "check": "npm run typecheck && npm test",
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "lucide": "0.468.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
