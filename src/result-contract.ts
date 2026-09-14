@@ -20,7 +20,7 @@ export interface ResultEnvelope {
 export function hasCompleteEvidence(result: Pick<ResultEnvelope, "assertions" | "artifacts">): boolean {
   if (result.assertions.length === 0) return false;
   const artifactIds = new Set(result.artifacts.map((artifact) => artifact.id));
-  return result.assertions.every((assertion) => assertion.status === "PASS" && assertion.evidenceIds.length > 0 && assertion.evidenceIds.every((id) => artifactIds.has(id)));
+  return result.assertions.every((assertion) => (assertion.status === "PASS" || assertion.status === "FAIL") && assertion.evidenceIds.length > 0 && assertion.evidenceIds.every((id) => artifactIds.has(id)));
 }
 
 export function determineVerdict(result: Pick<ResultEnvelope, "assertions" | "artifacts" | "cleanupStatus" | "executionStatus" | "failureKind">): Verdict {
