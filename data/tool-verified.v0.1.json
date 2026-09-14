@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1",
+  "verifiedAt": "2026-09-15",
+  "tools": [
+    {
+      "toolId": "homecore.check.layers",
+      "sourceRef": "homecore/tools/check_homecore_layers.py",
+      "runtime": "python",
+      "workingDirectory": "F:/repository/homecore",
+      "entrypoint": "tools/check_homecore_layers.py",
+      "arguments": {"--list-files": {"type":"boolean","optional":true}},
+      "sideEffects": "read-only",
+      "result": {"format":"text","successMarker":"Result: PASS","failureMarker":"Result: FAIL","exitCodes":{"pass":0,"fail":1,"error":2}},
+      "lifecycle": "active"
+    },
+    {
+      "toolId": "homecore.check.hcrp-contract",
+      "sourceRef": "homecore/tools/check_hcrp_contract.ps1",
+      "runtime": "powershell",
+      "workingDirectory": "F:/repository/homecore",
+      "entrypoint": "tools/check_hcrp_contract.ps1",
+      "arguments": {"Root": {"type":"string","default":"F:/repository/homecore"}},
+      "sideEffects": "read-only",
+      "result": {"format":"text","successMarker":"HCRP contract check passed","failure":"terminating PowerShell error"},
+      "lifecycle": "active"
+    },
+    {
+      "toolId": "homecore.check.firmware-environment",
+      "sourceRef": "homecore/tools/check_firmware_environment.ps1",
+      "runtime": "powershell",
+      "workingDirectory": "F:/repository/homecore",
+      "entrypoint": "tools/check_firmware_environment.ps1",
+      "arguments": {"Module": {"type":"string","allowed":["WIFI","BLE","ZIGBEE","ALL"],"default":"ALL"}},
+      "sideEffects": "read-only",
+      "result": {"format":"text","successMarker":"PASS","failureMarker":"FAIL"},
+      "lifecycle": "active"
+    }
+  ]
+}
