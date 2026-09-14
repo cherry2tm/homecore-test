@@ -1,4 +1,4 @@
-import { createReadStream, existsSync } from "node:fs";
+import { createReadStream, existsSync, readFileSync } from "node:fs";
 import { stat } from "node:fs/promises";
 import { createServer } from "node:http";
 import { extname, isAbsolute, relative, resolve, sep } from "node:path";
@@ -21,6 +21,13 @@ const securityHeaders = {
   "X-Content-Type-Options": "nosniff",
   "X-Frame-Options": "DENY"
 };
+
+const projectRoot = fileURLToPath(new URL(".", import.meta.url));
+const apiDocuments = new Map([
+  ["/api/catalog", resolve(projectRoot, "data/test-catalog.v0.1.json")],
+  ["/api/tools", resolve(projectRoot, "docs/tool-registry.v0.1.json")],
+  ["/api/source-boundary", resolve(projectRoot, "docs/source-boundary.v1.json")]
+]);
 
 function isContained(root, candidate) {
   const relativePath = relative(root, candidate);
@@ -73,6 +80,18 @@ async function handleRequest(request, response, root) {
     decodedPath = decodeURIComponent(pathname);
   } catch {
     sendError(response, 400, "Bad Request");
+    return;
+  }
+
+  if (request.method === "GET" && apiDocuments.has(decodedPath)) {
+    try {
+      const payload = readFileSync(apiDocuments.get(decodedPath), "utf8");
+      JSON.parse(payload);
+      response.writeHead(200, { ...securityHeaders, "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" });
+      response.end(payload);
+    } catch {
+      sendError(response, 500, "API data unavailable");
+    }
     return;
   }
 

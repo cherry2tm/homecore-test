@@ -83,6 +83,17 @@ test("serves a normal static file", async () => {
   assert.equal(response.body, "console.log('ready');");
 });
 
+test("serves versioned catalog APIs as JSON", async () => {
+  const server = createStaticServer({ root: distRoot });
+  await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
+  const address = server.address();
+  const response = await fetch(`http://127.0.0.1:${address.port}/api/catalog`);
+  const body = await response.json();
+  assert.equal(response.status, 200);
+  assert.equal(body.catalogVersion, "hc-test-assets-v0.1");
+  server.close();
+});
+
 test("falls back to index.html for an SPA route", async () => {
   const response = await get("/settings/device/42");
 
