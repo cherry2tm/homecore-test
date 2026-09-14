@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1",
+  "tools": [
+    {
+      "toolId":"homecore.acceptance.mqtt",
+      "sourceRef":"homecore/tools/hardware_mqtt_acceptance.py",
+      "runtime":"python",
+      "workingDirectory":"F:/repository/homecore",
+      "arguments":{"host":{"type":"string","default":"192.168.2.163"},"port":{"type":"number","default":1883},"cards":{"type":"string","default":"092,093,094,096,097","allowed":["092","093","094","096","097"]}},
+      "result":{"format":"json","fields":["host","port","passed","failed","results"],"exitCodes":{"pass":0,"fail":1}},
+      "sideEffects":"network protocol traffic; no firmware flash",
+      "evidence":["per-card result JSON","MQTT broker endpoint"],
+      "doesNotProve":["physical device action","full APP behavior"],
+      "lifecycle":"active"
+    },
+    {
+      "toolId":"homecore.acceptance.platform-journal",
+      "sourceRef":"homecore/tools/platform_journal_acceptance.py",
+      "runtime":"python",
+      "workingDirectory":"F:/repository/homecore",
+      "subcommands":{"inspect":{"image":"path","jsonl":"boolean","all-slots":"boolean"},"fixture":{"scenario":"enum","output":"path","slot":"number","force":"boolean"},"backup":{"port":"string","output":"path","force":"boolean"},"restore":{"port":"string","image":"path","confirm-write":"string"}},
+      "result":{"format":"text/jsonl","requires":"subcommand-specific parser"},
+      "sideEffects":"inspect read-only; fixture/backup/restore require explicit review",
+      "doesNotProve":["current live platform behavior unless live subcommand is used"],
+      "lifecycle":"active"
+    },
+    {
+      "toolId":"homecore.acceptance.node-wireless",
+      "sourceRef":"homecore/tools/platform_node_wireless_acceptance.py",
+      "runtime":"python",
+      "workingDirectory":"F:/repository/homecore",
+      "arguments":{"edge-url":{"type":"string","default":"http://192.168.30.25:18090"},"device-url":{"type":"string","default":"http://192.168.2.163"},"node-id":{"type":"string","default":"hc_dev_001"},"ble-address":{"type":"string","default":"5c:53:10:79:33:3a"},"timeout":{"type":"number","default":20}},
+      "result":{"format":"text/json","requires":"assertion parser review"},
+      "sideEffects":"network/device protocol traffic",
+      "doesNotProve":["BLE RF range","physical actuator feedback"],
+      "lifecycle":"active"
+    }
+  ]
+}
