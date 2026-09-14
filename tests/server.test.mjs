@@ -108,6 +108,12 @@ test("serves suite and run detail APIs", async () => {
   assert.equal(JSON.parse(run.body).verdict, "BLOCKED");
 });
 
+test("unknown API paths return 404 instead of SPA fallback", async () => {
+  const response = await get("/api/unknown");
+  assert.equal(response.statusCode, 404);
+  assert.equal(response.body, "API Not Found");
+});
+
 test("falls back to index.html for an SPA route", async () => {
   const response = await get("/settings/device/42");
 

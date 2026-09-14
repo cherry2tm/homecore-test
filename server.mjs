@@ -99,6 +99,11 @@ async function handleRequest(request, response, root) {
     return;
   }
 
+  if (decodedPath.startsWith("/api/")) {
+    sendError(response, 404, "API Not Found");
+    return;
+  }
+
   const relativeRequestPath =
     decodedPath === "/"
       ? "index.html"
