@@ -1,0 +1,10 @@
+{
+  "schemaVersion":"1",
+  "runId":"RUN-SEED-001",
+  "suiteId":"SUITE-SMOKE-V0.1",
+  "status":"not-started",
+  "verdict":"BLOCKED",
+  "reason":"演示种子记录，没有绑定真实执行器、环境和证据",
+  "caseAttempts":[],
+  "artifacts":[]
+}

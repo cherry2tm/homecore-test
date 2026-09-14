@@ -99,6 +99,15 @@ test("serves matrix and source inventory APIs", async () => {
   assert.equal(JSON.parse(inventory.body).sources.length, 4);
 });
 
+test("serves suite and run detail APIs", async () => {
+  const suites = await get("/api/suites");
+  const run = await get("/api/run-detail");
+  assert.equal(suites.statusCode, 200);
+  assert.equal(JSON.parse(suites.body).suites.length, 3);
+  assert.equal(run.statusCode, 200);
+  assert.equal(JSON.parse(run.body).verdict, "BLOCKED");
+});
+
 test("falls back to index.html for an SPA route", async () => {
   const response = await get("/settings/device/42");
 

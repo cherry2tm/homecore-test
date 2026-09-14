@@ -29,6 +29,8 @@ const apiDocuments = new Map([
   ["/api/source-boundary", resolve(projectRoot, "docs/source-boundary.v1.json")]
   , ["/api/feature-matrix", resolve(projectRoot, "data/feature-matrix-index.v0.2.json")]
   , ["/api/source-inventory", resolve(projectRoot, "data/source-inventory.v1.json")]
+  , ["/api/suites", resolve(projectRoot, "data/suites.v0.1.json")]
+  , ["/api/run-detail", resolve(projectRoot, "data/run-detail.seed.json")]
 ]);
 
 function isContained(root, candidate) {

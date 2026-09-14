@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "1",
+  "suites": [
+    {"suiteId":"SUITE-SMOKE-V0.1","name":"HC基础冒烟","kind":"smoke","caseIds":["TC-SYS-001-001","TC-HCRP-002-001"],"requiredModes":["hardware"],"status":"draft"},
+    {"suiteId":"SUITE-HCRP-V0.1","name":"HCRP专项","kind":"specialized","caseIds":["TC-HCRP-002-001"],"requiredModes":["hardware","hardware-with-simulated-input"],"status":"draft"},
+    {"suiteId":"SUITE-REGRESSION-V0.1","name":"当前已登记回归","kind":"regression","caseIds":["TC-SYS-001-001","TC-HCRP-002-001"],"requiredModes":["hardware"],"status":"draft"}
+  ]
+}
