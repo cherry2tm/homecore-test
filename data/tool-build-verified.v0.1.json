@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1",
+  "tools": [
+    {
+      "toolId": "homecore.build.libs",
+      "sourceRef": "homecore/tools/build_homecore_libs.ps1",
+      "runtime": "powershell",
+      "workingDirectory": "F:/repository/homecore",
+      "arguments": {"ListOnly":{"type":"boolean"},"Rebuild":{"type":"boolean"},"Module":{"type":"string[]","allowed":["libos","libdrv","libdev"]},"All":{"type":"boolean"}},
+      "safety": "requires-explicit-module-or-all; build side effect only",
+      "artifacts": ["project/lib/release/*.h","project/lib/release/*.lib"],
+      "doesNotProve": ["hardware behavior","firmware flashed","physical action"],
+      "lifecycle": "active"
+    },
+    {
+      "toolId": "homecore.build.wireless-release",
+      "sourceRef": "homecore/tools/build_wireless_release.ps1",
+      "runtime": "powershell",
+      "workingDirectory": "F:/repository/homecore",
+      "arguments": {"OutputRoot":{"type":"string","required":true},"Module":{"type":"string","default":"WIFI,BLE,ZIGBEE","allowed":["WIFI","BLE","ZIGBEE"]},"Incremental":{"type":"boolean"},"PackageOnly":{"type":"boolean"},"Release":{"type":"boolean"}},
+      "safety": "build/package side effect; no flashing",
+      "artifacts": ["wireless output root","package archive"],
+      "doesNotProve": ["hardware behavior","network interoperability"],
+      "lifecycle": "active"
+    },
+    {
+      "toolId": "homecore.build.all-firmware-release",
+      "sourceRef": "homecore/tools/build_all_firmware_release.ps1",
+      "runtime": "powershell",
+      "workingDirectory": "F:/repository/homecore",
+      "arguments": {"ReleaseScope":{"type":"string","allowed":["ALL","MCU","C6"]},"PlanOnly":{"type":"boolean"},"BuildMode":{"type":"string","allowed":["AUTO","FULL"]},"ForceRebuild":{"type":"boolean"},"AllowDirtySource":{"type":"boolean"}},
+      "safety": "build/package side effect; documented as no flash and no commit/push",
+      "artifacts": ["release package","component identities","source fingerprints"],
+      "doesNotProve": ["hardware behavior","OTA success"],
+      "lifecycle": "active"
+    }
+  ]
+}
