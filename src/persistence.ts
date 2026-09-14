@@ -41,7 +41,7 @@ export function openTestStore(filename: string): TestStore {
   const store: TestStore = {
     close: () => db.close(),
     saveRun: (run) => saveRunStatement.run(run.id, run.revision, run.branch, run.profile, run.status, run.conclusion, run.startedAt, run.duration, run.passed, run.failed, run.blocked, run.evidenceCount, run.planHash),
-    listRuns: () => db.prepare("SELECT id, revision, branch, profile, status, conclusion, started_at AS startedAt, duration, passed, failed, blocked, evidence_count AS evidenceCount, plan_hash AS planHash FROM runs ORDER BY started_at DESC").all() as unknown as RunRecord[],
+    listRuns: () => db.prepare("SELECT id, revision, branch, profile, status, conclusion, started_at AS startedAt, duration, passed, failed, blocked, evidence_count AS evidenceCount, plan_hash AS planHash FROM runs ORDER BY started_at DESC").all().map((row) => ({ ...row })) as unknown as RunRecord[],
     saveAttempt: (runId, attempt) => db.prepare("INSERT OR REPLACE INTO case_attempts (id, run_id, case_id, attempt, verdict, payload) VALUES (?, ?, ?, ?, ?, ?)").run(attempt.id, runId, attempt.caseId, attempt.attempt, attempt.verdict, JSON.stringify(attempt)),
     saveArtifact: (runId, artifact) => db.prepare("INSERT OR REPLACE INTO artifacts (id, run_id, relative_path, media_type, sha256, size_bytes, source) VALUES (?, ?, ?, ?, ?, ?, ?)").run(artifact.id, runId, artifact.relativePath, artifact.mediaType, artifact.sha256 ?? null, artifact.sizeBytes ?? null, artifact.source)
   };
