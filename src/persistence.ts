@@ -9,6 +9,8 @@ export interface TestStore {
   listRuns(): RunRecord[];
   saveAttempt(runId: string, attempt: CaseAttempt): void;
   saveArtifact(runId: string, artifact: Artifact): void;
+  saveHeartbeat(workerId: string, at: number, status: "ready" | "busy" | "offline"): void;
+  getHeartbeat(workerId: string): { workerId: string; at: number; status: string } | undefined;
 }
 
 export function openTestStore(filename: string): TestStore {
@@ -33,6 +35,9 @@ export function openTestStore(filename: string): TestStore {
       media_type TEXT NOT NULL, sha256 TEXT, size_bytes INTEGER, source TEXT NOT NULL,
       FOREIGN KEY(run_id) REFERENCES runs(id)
     );
+    CREATE TABLE IF NOT EXISTS worker_heartbeats (
+      worker_id TEXT PRIMARY KEY, at INTEGER NOT NULL, status TEXT NOT NULL
+    );
   `);
   const saveRunStatement = db.prepare(`INSERT INTO runs (id, revision, branch, profile, status, conclusion, started_at, duration, passed, failed, blocked, evidence_count, plan_hash)
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -44,6 +49,8 @@ export function openTestStore(filename: string): TestStore {
     listRuns: () => db.prepare("SELECT id, revision, branch, profile, status, conclusion, started_at AS startedAt, duration, passed, failed, blocked, evidence_count AS evidenceCount, plan_hash AS planHash FROM runs ORDER BY started_at DESC").all().map((row) => ({ ...row })) as unknown as RunRecord[],
     saveAttempt: (runId, attempt) => db.prepare("INSERT OR REPLACE INTO case_attempts (id, run_id, case_id, attempt, verdict, payload) VALUES (?, ?, ?, ?, ?, ?)").run(attempt.id, runId, attempt.caseId, attempt.attempt, attempt.verdict, JSON.stringify(attempt)),
     saveArtifact: (runId, artifact) => db.prepare("INSERT OR REPLACE INTO artifacts (id, run_id, relative_path, media_type, sha256, size_bytes, source) VALUES (?, ?, ?, ?, ?, ?, ?)").run(artifact.id, runId, artifact.relativePath, artifact.mediaType, artifact.sha256 ?? null, artifact.sizeBytes ?? null, artifact.source)
+    , saveHeartbeat: (workerId, at, status) => db.prepare("INSERT OR REPLACE INTO worker_heartbeats (worker_id, at, status) VALUES (?, ?, ?)").run(workerId, at, status)
+    , getHeartbeat: (workerId) => { const row = db.prepare("SELECT worker_id AS workerId, at, status FROM worker_heartbeats WHERE worker_id = ?").get(workerId); return row ? { ...row } as { workerId: string; at: number; status: string } : undefined; }
   };
   return store;
 }
