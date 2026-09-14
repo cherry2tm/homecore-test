@@ -90,6 +90,15 @@ test("serves versioned catalog APIs as JSON", async () => {
   assert.equal(body.catalogVersion, "hc-test-assets-v0.1");
 });
 
+test("serves matrix and source inventory APIs", async () => {
+  const matrix = await get("/api/feature-matrix");
+  const inventory = await get("/api/source-inventory");
+  assert.equal(matrix.statusCode, 200);
+  assert.equal(JSON.parse(matrix.body).categoryCount, 23);
+  assert.equal(inventory.statusCode, 200);
+  assert.equal(JSON.parse(inventory.body).sources.length, 4);
+});
+
 test("falls back to index.html for an SPA route", async () => {
   const response = await get("/settings/device/42");
 
